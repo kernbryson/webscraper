@@ -1,6 +1,6 @@
 const cheerio = require("cheerio");
 const axios = require("axios");
-function Scrape() {
+const Scrape= ({address})=>{
   axios
     .get("https://rlselaw.com/property-listing/georgia-property-listings/")
     .then((res) => {
@@ -18,13 +18,17 @@ function Scrape() {
           county: county,
           bid: bid,
         };
-        console.log(infoObject);
+        
+        const testArray=[]
       });
     });
+    
   return (
     <div>
+      
       <ul>
-        <li>test</li>
+        <li>TEST</li>
+       <li></li>
       </ul>
     </div>
   );

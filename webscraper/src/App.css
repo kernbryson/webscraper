@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
+.header{
+  font-size: 45px;
+  padding: 30px;
+  margin: 2px;
+  border: 2px solid gray;
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
